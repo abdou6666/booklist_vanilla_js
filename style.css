@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E6DDC4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #678983;
+}
+
+.container {
+    height: 500px;
+    width: 300px;
+    margin-top: 100px;
+    margin: auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+
+
+
+.content input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    color: #181D31;
+}
+
+.content input:focus {
+    border-bottom: 2px solid grey;
+}
+
+.content label {
+    color: #678983;
+    font-size: 20px;
+}
+
+
+
+.form-control button {
+    background-color: #181D31;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: auto;
+}
+
+.form-control button:hover {
+    filter: opacity(.9);
+}
+
+
+
+th,
+td {
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 30px;
+}
+
+table {
+    margin: auto;
+}
+
+.output {
+    height: max-content;
+    width: 100vw;
+}
+
+.delete {
+    appearance: none;
+    outline: none;
+    border: 1px solid rgba(160, 24, 51, 0.712);
+    color: rgba(160, 24, 51, 0.712);
+    background-color: #E6DDC4;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.delete:hover {
+    background-color: rgba(160, 24, 51, 0.712);
+    color: #E6DDC4;
+}
+
+.delete:focus {
+    filter: brightness(110%);
+}
+
+.btn {
+    background-color: #023e8a;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    color: #E6DDC4;
+}
+
+.btn:hover {
+    filter: brightness(90%);
+}
+
+.btn:focus {
+    filter: brightness(110%);
+}
+
+.error {
+    display: none;
+    position: fixed;
+    top: 50px;
+
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(160, 24, 51, 0.712);
+    color: #E6DDC4;
+    width: 150px;
+    height: 40px;
+    animation-name: error;
+    animation-duration: 2s;
+    animation-direction: normal;
+
+}
+
+@keyframes error {
+    0% {
+        left: -350px;
+    }
+
+    25% {
+        left: -200px
+    }
+
+    50% {
+        left: -100px
+    }
+
+    75% {
+        left: 50px
+    }
+
+    100% {
+        left: 0px
+    }
+}
